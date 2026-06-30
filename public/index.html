@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Y-Tech Solutions | Innovative Technology Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        .animate-float { animation: float 3s ease-in-out infinite; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <nav class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                
+                <div class="flex items-center">
+                    <span class="text-xl font-bold tracking-tight text-gray-900 flex items-center">
+                        <span class="bg-blue-600 text-white w-8 h-8 flex items-center justify-center rounded-lg mr-2 shadow-sm shadow-blue-200">
+                            <i class="fas fa-code-branch text-sm"></i>
+                        </span>
+                        Y-Tech <span class="text-blue-600 ml-1 font-semibold">Solutions</span>
+                    </span>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-sm font-medium text-gray-600 hover:text-blue-600 relative py-2 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-blue-600 hover:after:w-full after:transition-all after:duration-300 transition">Home</a>
+                    <a href="#about" class="text-sm font-medium text-gray-600 hover:text-blue-600 relative py-2 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-blue-600 hover:after:w-full after:transition-all after:duration-300 transition">About Us</a>
+                    <a href="#services" class="text-sm font-medium text-gray-600 hover:text-blue-600 relative py-2 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-blue-600 hover:after:w-full after:transition-all after:duration-300 transition">Services</a>
+                    <a href="#portfolio" class="text-sm font-medium text-gray-600 hover:text-blue-600 relative py-2 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-blue-600 hover:after:w-full after:transition-all after:duration-300 transition">Portfolio</a>
+                    <a href="#team" class="text-sm font-medium text-gray-600 hover:text-blue-600 relative py-2 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-blue-600 hover:after:w-full after:transition-all after:duration-300 transition">Our Team</a>
+                    
+                    <a href="#contact" class="inline-flex items-center justify-center text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 px-5 py-2 rounded-xl transition duration-300 shadow-sm shadow-blue-100 hover:shadow-md transform hover:-translate-y-0.5">
+                        Contact Us
+                    </a>
+                </div>
+
+                <div class="flex items-center md:hidden">
+                    <button onclick="toggleMenu()" class="text-gray-500 hover:text-gray-900 focus:outline-none p-2 rounded-lg hover:bg-gray-50 transition">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-4 pt-2 pb-4 space-y-1 shadow-xl">
+            <a href="#home" class="block text-gray-600 font-medium py-2.5 px-3 rounded-lg hover:bg-gray-50 hover:text-blue-600 transition" onclick="toggleMenu()">Home</a>
+            <a href="#about" class="block text-gray-600 font-medium py-2.5 px-3 rounded-lg hover:bg-gray-50 hover:text-blue-600 transition" onclick="toggleMenu()">About Us</a>
+            <a href="#services" class="block text-gray-600 font-medium py-2.5 px-3 rounded-lg hover:bg-gray-50 hover:text-blue-600 transition" onclick="toggleMenu()">Services</a>
+            <a href="#portfolio" class="block text-gray-600 font-medium py-2.5 px-3 rounded-lg hover:bg-gray-50 hover:text-blue-600 transition" onclick="toggleMenu()">Portfolio</a>
+            <a href="#team" class="block text-gray-600 font-medium py-2.5 px-3 rounded-lg hover:bg-gray-50 hover:text-blue-600 transition" onclick="toggleMenu()">Our Team</a>
+            <a href="#contact" class="block bg-blue-600 text-white font-medium text-center py-2.5 rounded-xl shadow-md mt-2" onclick="toggleMenu()">Contact Us</a>
+        </div>
+    </nav>
+
+    <section id="home" class="relative bg-gradient-to-r from-blue-50 to-indigo-50 pt-20 pb-16 lg:pt-32 lg:pb-24 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                
+                <div class="space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center space-x-2 bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold tracking-wide">
+                        <span class="flex h-2 w-2 rounded-full bg-blue-600 animate-pulse"></span>
+                        <span>Empowering Digital Transformation</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 tracking-tight leading-tight">
+                        Innovative Technology <br>
+                        <span class="text-blue-600">Solutions for Your Business</span>
+                    </h1>
+                    <p class="text-lg text-gray-600 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                        We deliver cutting-edge software engineering, premium web development, and cloud-native computing. From custom mobile applications and seamless UI/UX designs to enterprise-grade architectures and automated testing, we provide end-to-end IT services tailored to scale your brand and accelerate digital growth.
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#contact" class="inline-flex items-center justify-center px-6 py-3.5 bg-blue-600 text-white font-medium rounded-xl shadow-md hover:bg-blue-700 hover:shadow-lg transition transform hover:-translate-y-0.5 duration-200">
+                            Get Started <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                        <a href="#services" class="inline-flex items-center justify-center px-6 py-3.5 bg-white text-gray-700 font-medium rounded-xl shadow-sm hover:bg-gray-100 transition border border-gray-200 duration-200">
+                            Explore Services
+                        </a>
+                    </div>
+                </div>
+
+                <div class="relative flex justify-center lg:justify-end animate-float">
+                    <div class="absolute -inset-2 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-2xl blur-lg opacity-10"></div>
+                    <div class="relative bg-gray-900 text-gray-100 p-6 rounded-2xl shadow-2xl font-mono text-sm w-full max-w-md border border-gray-800">
+                        <div class="flex space-x-2 border-b border-gray-800 pb-3 mb-4">
+                            <span class="w-3 h-3 bg-red-500 rounded-full"></span>
+                            <span class="w-3 h-3 bg-yellow-500 rounded-full"></span>
+                            <span class="w-3 h-3 bg-green-500 rounded-full"></span>
+                            <span class="text-xs text-gray-500 ml-2">ytech-solutions.js</span>
+                        </div>
+                        <p class="text-blue-400"><span class="text-pink-400">const</span> company = <span class="text-yellow-300">{</span></p>
+                        <p class="pl-4">name: <span class="text-green-300">"Y-Tech Solutions"</span>,</p>
+                        <p class="pl-4">vision: <span class="text-green-300">"Build the Future"</span>,</p>
+                        <p class="pl-4">techStack: <span class="text-yellow-300">[</span><span class="text-orange-300">"React", "Node", "Cloud"</span><span class="text-yellow-300">]</span>,</p>
+                        <p class="pl-4">status: <span class="text-green-300">"Ready_To_Scale"</span></p>
+                        <p class="text-yellow-300">};</p>
+                        <p class="text-emerald-400 font-bold mt-4">> System Online [OK]</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 pt-12 border-t border-gray-200/60 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                <div class="flex items-center justify-center md:justify-start space-x-4">
+                    <div class="bg-blue-100 text-blue-600 p-3 rounded-xl"><i class="fas fa-check-circle text-xl"></i></div>
+                    <div>
+                        <h4 class="text-2xl font-extrabold text-gray-900">50+</h4>
+                        <p class="text-sm font-medium text-gray-500 uppercase tracking-wider">Projects Delivered</p>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center md:justify-start space-x-4">
+                    <div class="bg-indigo-100 text-indigo-600 p-3 rounded-xl"><i class="fas fa-globe text-xl"></i></div>
+                    <div>
+                        <h4 class="text-2xl font-extrabold text-gray-900">20+</h4>
+                        <p class="text-sm font-medium text-gray-500 uppercase tracking-wider">Global Clients</p>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center md:justify-start space-x-4">
+                    <div class="bg-emerald-100 text-emerald-600 p-3 rounded-xl"><i class="fas fa-users text-xl"></i></div>
+                    <div>
+                        <h4 class="text-2xl font-extrabold text-gray-900">99.8%</h4>
+                        <p class="text-sm font-medium text-gray-500 uppercase tracking-wider">Client Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-white relative overflow-hidden">
+        <div class="absolute -right-20 top-20 w-80 h-80 bg-blue-50 rounded-full blur-3xl opacity-60 pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <h2 class="text-xs text-blue-600 font-bold tracking-widest uppercase bg-blue-50 inline-block px-3 py-1 rounded-md mb-3">Who We Are</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">Architecting the Future of Digital Innovation</p>
+                <div class="h-1 w-16 bg-blue-600 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mb-20">
+                <div class="space-y-6">
+                    <div class="border-l-4 border-blue-600 pl-4">
+                        <h3 class="text-2xl font-bold text-gray-900 leading-tight">Empowering Enterprises Worldwide with Tailored Engineering Excellence</h3>
+                    </div>
+                    <p class="text-base text-gray-600 leading-relaxed">
+                        Y-Tech Solutions is a premier technology consulting and end-to-end software development firm. We don’t just write code; we design and scale resilient digital architectures that accelerate workflow automation, minimize security overheads, and unlock measurable corporate value.
+                    </p>
+                    <p class="text-base text-gray-600 leading-relaxed">
+                        From early-stage conceptualization to global production deployment, our seasoned engineering squad leverages cutting-edge technology stacks to transform operational challenges into fluid digital assets.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="flex items-start space-x-3">
+                        <div class="text-blue-600 mt-1"><i class="fas fa-check-circle text-lg"></i></div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 text-base">Agile Frameworks</h4>
+                            <p class="text-sm text-gray-500 mt-1">Rapid iterative sprints built for dynamic adaptation.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <div class="text-blue-600 mt-1"><i class="fas fa-check-circle text-lg"></i></div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 text-base">Enterprise Security</h4>
+                            <p class="text-sm text-gray-500 mt-1">Strict encryption standard protocols out of the box.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <div class="text-blue-600 mt-1"><i class="fas fa-check-circle text-lg"></i></div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 text-base">Cloud Native</h4>
+                            <p class="text-sm text-gray-500 mt-1">Seamless scale powered by robust multi-cloud clusters.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <div class="text-blue-600 mt-1"><i class="fas fa-check-circle text-lg"></i></div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 text-base">24/7 Monitoring</h4>
+                            <p class="text-sm text-gray-500 mt-1">Constant diagnostic profiling for uninterrupted uptime.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50/60 border border-gray-100 p-8 rounded-2xl shadow-sm hover:shadow-md hover:bg-white transition duration-300">
+                    <div class="bg-blue-600 text-white w-12 h-12 flex items-center justify-center rounded-xl mb-6 shadow-md shadow-blue-100">
+                        <i class="fas fa-bullseye text-lg"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Our Mission</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        To construct robust, high-performance digital ecosystems. We commit to absolute architectural integrity, absolute delivery transparency, and sustainable technical practices.
+                    </p>
+                </div>
+                <div class="bg-gray-50/60 border border-gray-100 p-8 rounded-2xl shadow-sm hover:shadow-md hover:bg-white transition duration-300">
+                    <div class="bg-indigo-600 text-white w-12 h-12 flex items-center justify-center rounded-xl mb-6 shadow-md shadow-indigo-100">
+                        <i class="fas fa-eye text-lg"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Our Vision</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        To be an international hub of software engineering advancement, leading modern industries toward smarter cloud transitions and agile intelligence structures.
+                    </p>
+                </div>
+                <div class="bg-gray-50/60 border border-gray-100 p-8 rounded-2xl shadow-sm hover:shadow-md hover:bg-white transition duration-300">
+                    <div class="bg-emerald-500 text-white w-12 h-12 flex items-center justify-center rounded-xl mb-6 shadow-md shadow-emerald-100">
+                        <i class="fas fa-handshake text-lg"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Core Values</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Uncompromising engineering quality, hyper-focused customer satisfaction metrics, and an innovative mindset that challenges status-quo workflows.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">What We Offer</h2>
+                <p class="mt-2 text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">Our Core Services</p>
+                <div class="h-1 w-20 bg-blue-600 mx-auto mt-4 rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border border-gray-100">
+                    <div class="bg-blue-100 text-blue-600 w-12 h-12 flex items-center justify-center rounded-xl mb-6 text-xl"><i class="fas fa-laptop-code"></i></div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Web Development</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">Custom, high-speed responsive websites and scalable corporate web portals built for modern systems.</p>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="bg-blue-50 text-blue-600 text-[10px] font-semibold px-2 py-0.5 rounded">React</span>
+                        <span class="bg-blue-50 text-blue-600 text-[10px] font-semibold px-2 py-0.5 rounded">Node.js</span>
+                        <span class="bg-blue-50 text-blue-600 text-[10px] font-semibold px-2 py-0.5 rounded">Tailwind</span>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border border-gray-100">
+                    <div class="bg-purple-100 text-purple-600 w-12 h-12 flex items-center justify-center rounded-xl mb-6 text-xl"><i class="fas fa-mobile-alt"></i></div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Mobile Apps</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">Premium iOS and Android applications with fluid UI/UX layouts and fast database integrations.</p>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="bg-purple-50 text-purple-600 text-[10px] font-semibold px-2 py-0.5 rounded">Flutter</span>
+                        <span class="bg-purple-50 text-purple-600 text-[10px] font-semibold px-2 py-0.5 rounded">React Native</span>
+                        <span class="bg-purple-50 text-purple-600 text-[10px] font-semibold px-2 py-0.5 rounded">Firebase</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border border-gray-100">
+                    <div class="bg-pink-100 text-pink-600 w-12 h-12 flex items-center justify-center rounded-xl mb-6 text-xl"><i class="fas fa-palette"></i></div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">UI/UX Design</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">High-fidelity responsive mockups and interactive wireframes designed for maximum user engagement.</p>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="bg-pink-50 text-pink-600 text-[10px] font-semibold px-2 py-0.5 rounded">Figma</span>
+                        <span class="bg-pink-50 text-pink-600 text-[10px] font-semibold px-2 py-0.5 rounded">Wireframing</span>
+                        <span class="bg-pink-50 text-pink-600 text-[10px] font-semibold px-2 py-0.5 rounded">Prototypes</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border border-gray-100">
+                    <div class="bg-orange-100 text-orange-600 w-12 h-12 flex items-center justify-center rounded-xl mb-6 text-xl"><i class="fas fa-cloud"></i></div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Cloud & DevOps</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">Secure cloud hosting, auto-scaling clusters, and automated continuous deployment workflows.</p>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="bg-orange-50 text-orange-600 text-[10px] font-semibold px-2 py-0.5 rounded">AWS EC2/S3</span>
+                        <span class="bg-orange-50 text-orange-600 text-[10px] font-semibold px-2 py-0.5 rounded">Docker</span>
+                        <span class="bg-orange-50 text-orange-600 text-[10px] font-semibold px-2 py-0.5 rounded">CI/CD</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border border-gray-100">
+                    <div class="bg-emerald-100 text-emerald-600 w-12 h-12 flex items-center justify-center rounded-xl mb-6 text-xl"><i class="fas fa-database"></i></div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Database Systems</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">Highly secure, normalized relational database designs, query optimization, and transaction tuning.</p>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="bg-emerald-50 text-emerald-600 text-[10px] font-semibold px-2 py-0.5 rounded">SQL</span>
+                        <span class="bg-emerald-50 text-emerald-600 text-[10px] font-semibold px-2 py-0.5 rounded">PostgreSQL</span>
+                        <span class="bg-emerald-50 text-emerald-600 text-[10px] font-semibold px-2 py-0.5 rounded">3NF Design</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border border-gray-100">
+                    <div class="bg-red-100 text-red-600 w-12 h-12 flex items-center justify-center rounded-xl mb-6 text-xl"><i class="fas fa-shield-alt"></i></div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Quality Assurance</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">End-to-end system diagnostics, vulnerability testing, and secure performance auditing.</p>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="bg-red-50 text-red-600 text-[10px] font-semibold px-2 py-0.5 rounded">Unit Testing</span>
+                        <span class="bg-red-50 text-red-600 text-[10px] font-semibold px-2 py-0.5 rounded">Selenium</span>
+                        <span class="bg-red-50 text-red-600 text-[10px] font-semibold px-2 py-0.5 rounded">Security Audit</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">Our Works</h2>
+                <p class="mt-2 text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">Recent Projects</p>
+                <div class="h-1 w-20 bg-blue-600 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 group">
+                    <div class="h-44 bg-gradient-to-r from-blue-500 to-indigo-600 flex items-center justify-center text-white text-4xl font-bold">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">E-Commerce App</h3>
+                        <p class="text-gray-600 text-xs sm:text-sm mb-4">A complete retail shopping system featuring smooth product catalogs, dynamic cart updates, and safe Stripe checkouts.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 text-gray-600 text-[10px] font-mono px-2 py-0.5 rounded">React</span>
+                            <span class="bg-gray-100 text-gray-600 text-[10px] font-mono px-2 py-0.5 rounded">Node.js</span>
+                        </div>
+                        <div class="flex space-x-3 text-xs">
+                            <a href="#" class="px-3 py-2 bg-gray-900 text-white rounded-md hover:bg-black transition"><i class="fab fa-github mr-1"></i> Code</a>
+                            <a href="#" class="px-3 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition"><i class="fas fa-external-link-alt mr-1"></i> Live</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 group">
+                    <div class="h-44 bg-gradient-to-r from-emerald-500 to-teal-600 flex items-center justify-center text-white text-4xl font-bold">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">Mini Bank System</h3>
+                        <p class="text-gray-600 text-xs sm:text-sm mb-4">A lightweight banking terminal supporting secure login sessions, balance tracking, and historical transaction logs.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 text-gray-600 text-[10px] font-mono px-2 py-0.5 rounded">Python</span>
+                            <span class="bg-gray-100 text-gray-600 text-[10px] font-mono px-2 py-0.5 rounded">Flask</span>
+                        </div>
+                        <div class="flex space-x-3 text-xs">
+                            <a href="#" class="px-3 py-2 bg-gray-900 text-white rounded-md hover:bg-black transition"><i class="fab fa-github mr-1"></i> Code</a>
+                            <a href="#" class="px-3 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition"><i class="fas fa-external-link-alt mr-1"></i> Live</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 group">
+                    <div class="h-44 bg-gradient-to-r from-indigo-500 to-purple-600 flex items-center justify-center text-white text-4xl font-bold">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">AI Analytics</h3>
+                        <p class="text-gray-600 text-xs sm:text-sm mb-4">A real-time data monitoring platform with interactive charts, secure authentication, and automated insights generation.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 text-gray-600 text-[10px] font-mono px-2 py-0.5 rounded">Next.js</span>
+                            <span class="bg-gray-100 text-gray-600 text-[10px] font-mono px-2 py-0.5 rounded">Chart.js</span>
+                        </div>
+                        <div class="flex space-x-3 text-xs">
+                            <a href="#" class="px-3 py-2 bg-gray-900 text-white rounded-md hover:bg-black transition"><i class="fab fa-github mr-1"></i> Code</a>
+                            <a href="#" class="px-3 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition"><i class="fas fa-external-link-alt mr-1"></i> Live</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 group">
+                    <div class="h-44 bg-gradient-to-r from-pink-500 to-rose-600 flex items-center justify-center text-white text-4xl font-bold">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">Cloud Architecture</h3>
+                        <p class="text-gray-600 text-xs sm:text-sm mb-4">A highly scalable backend infrastructure engineered to handle heavy traffic with automated logging pipelines.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 text-gray-600 text-[10px] font-mono px-2 py-0.5 rounded">Node.js</span>
+                            <span class="bg-gray-100 text-gray-600 text-[10px] font-mono px-2 py-0.5 rounded">AWS Cloud</span>
+                        </div>
+                        <div class="flex space-x-3 text-xs">
+                            <a href="#" class="px-3 py-2 bg-gray-900 text-white rounded-md hover:bg-black transition"><i class="fab fa-github mr-1"></i> Code</a>
+                            <a href="#" class="px-3 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition"><i class="fas fa-external-link-alt mr-1"></i> Live</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">Who We Are</h2>
+                <p class="mt-2 text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">Our Dedicated Experts</p>
+                <div class="h-1 w-20 bg-blue-600 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="flex justify-center">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 text-center max-w-xs w-full transition duration-300 hover:shadow-md hover:-translate-y-1 transform">
+                    <div class="w-24 h-24 bg-gradient-to-tr from-blue-600 to-indigo-600 rounded-full mx-auto mb-6 flex items-center justify-center text-white text-3xl font-extrabold shadow-md shadow-blue-100">
+                        Y
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-1">Yachi</h3>
+                    <p class="text-blue-600 text-xs font-semibold uppercase tracking-wider mb-4">Founder & Lead Engineer</p>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6">Visionary tech architecture designer specializing in end-to-end full stack development pipelines and cloud deployment automation strategies.</p>
+                    <div class="flex justify-center space-x-4 text-gray-400">
+                        <a href="#" class="hover:text-gray-900 transition"><i class="fab fa-github text-lg"></i></a>
+                        <a href="#" class="hover:text-blue-600 transition"><i class="fab fa-linkedin text-lg"></i></a>
+                        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-twitter text-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                
+                <div class="space-y-6">
+                    <h2 class="text-3xl font-extrabold text-gray-900 tracking-tight">Let's Connect and Build Together</h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        Have an ambitious idea or a pipeline that needs architectural optimization? Reach out directly. Our engineering squad is online and prepared to map out your software solutions.
+                    </p>
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-center space-x-4">
+                            <div class="bg-blue-100 text-blue-600 p-3 rounded-xl"><i class="fas fa-envelope"></i></div>
+                            <span class="text-gray-700 font-medium">info@ytechsolutions.com</span>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="bg-blue-100 text-blue-600 p-3 rounded-xl"><i class="fas fa-phone-alt"></i></div>
+                            <span class="text-gray-700 font-medium">+91 98765 43210</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 border border-gray-100 p-8 rounded-2xl shadow-sm">
+                    <form action="http://localhost:5000/api/submit" method="POST" enctype="multipart/form-data" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">Name</label>
+                            <input type="text" name="name" class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-sm focus:outline-none focus:border-blue-600 transition" placeholder="Your Name" required>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">Email</label>
+                            <input type="email" name="email" class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-sm focus:outline-none focus:border-blue-600 transition" placeholder="your@email.com" required>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">Phone Number</label>
+                            <input type="tel" name="phone" class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-sm focus:outline-none focus:border-blue-600 transition" placeholder="+91 XXXXX XXXXX" required>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">Category / Technology</label>
+                            <select name="category" class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-sm focus:outline-none focus:border-blue-600 transition">
+                                <option value="web-dev">Web Development</option>
+                                <option value="python">Python Programming</option>
+                                <option value="databases">SQL / Database Management</option>
+                                <option value="cloud">Cloud Computing</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">Upload Document / Report</label>
+                            <input type="file" name="file" class="w-full px-4 py-2.5 rounded-xl border border-gray-200 bg-white text-sm text-gray-500 file:mr-4 file:py-1.5 file:px-4 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 transition">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">Message</label>
+                            <textarea name="message" rows="4" class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-sm focus:outline-none focus:border-blue-600 transition" placeholder="Tell us about your project..." required></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-3.5 bg-blue-600 text-white font-medium rounded-xl shadow-md hover:bg-blue-700 transition duration-200">Send Message</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <span class="text-sm font-semibold tracking-tight text-white flex items-center">
+                Y-Tech <span class="text-blue-500 ml-1">Solutions</span>
+            </span>
+            <p class="text-xs">&copy; 2026 Y-Tech Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            if(menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        }
+    </script>
+</body>
+</html>
